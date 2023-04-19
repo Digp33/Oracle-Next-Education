@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Score Football</title>
+</head>
+<h1>Programa- Calcular puntos de un equipo de football</h1>
+<script >
+	function saltarLinea()
+	{
+		document.write("<br><br><br>");
+	}
+	function imprimir(frase)
+	{
+		document.write(frase);
+		saltarLinea();
+	}
+	var victorias = parseInt(prompt("Cuantas victorias tuvo?"));
+	var empate = parseInt(prompt("Cuantos empates tuvo?"));
+	var puntosTotal = victorias * 3 + empate;
+	imprimir("El total de puntos es: " + puntosTotal);
+	var puntosAnteriores = 28;
+	if (puntosTotal>puntosAnteriores) {
+		imprimir("El equipo va mejor");
+	}else if (puntosTotal<puntosAnteriores) {
+		imprimir("el equipo va peor");
+	}else{
+		imprimir("el equipo va igual que el anio pasado");
+	}
+</script>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mundiales</title>
+</head>
+<h1>Programa- saber que anio hay mundial</h1>
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+    var anioInicioMundial = 1930;
+    var limite = parseInt(prompt("Ingrese el limite de anio a calcular: "));
+    while (anioInicioMundial<=limite)
+    {
+        imprimir("Hubo mundial de la FIFA en el anio " + anioInicioMundial);
+        anioInicioMundial=anioInicioMundial+4;
+    }
+    imprimir("Fin");
+</script>
+</html>

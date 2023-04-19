@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Puede Conducir</title>
+</head>
+<h1>Programa- saber si puede conducir</h1>
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var edad = parseInt(prompt("¿Cuál es tu edad?"));
+    var tieneLicencia = prompt("¿Tienes licencia? Responde S o N");
+    if((edad>=18)&&((tieneLicencia=="S")||(tieneLicencia=="s")))
+    {
+        imprimir("Puede conducir");
+    }else{
+        imprimir("No puede conducir");
+    }
+</script>
